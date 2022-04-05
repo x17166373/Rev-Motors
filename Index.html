@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Rev Motors</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="top_nav"> 
+    <img class="logo" src="logo1.png" alt="Rev Motors Logo">
+    <a href="#Contact Us">Contact Us</a>
+    <a href="#Our Services">Our Services</a>
+    <a href="#Our Cars">Our Cars</a>
+    <a href="#About Us">About Us</a>
+    <a href="#Home">Home</a>
+</div>
+
+<div class="slideshow-container">
+  <div class="mySlides fade">
+    <img src="image1.jpg" style="width:100%">
+  </div>
+  <div class="mySlides fade">
+    <img src="Image2.jpg" style="width:100%">
+  </div>
+  <div class="mySlides fade">
+    <img src="image3.jpg" style="width:100%">
+  </div>
+  </div>
+
+  <div class="row">
+    <div class="column">
+      <h4>All Brands</h4>
+      <p>We pride ourselves on our ability to service all makes and models. No matter the problem, we are certain one of our highly trained mechanics will be able to help.</p>
+    </div>
+    <div class="column">
+      <h4>Affordable</h4>
+      <p>We always aim to keep our costs low, and ease the pain of an unexpected engine light! Dealership quality, without the price.</p>
+    </div>
+    <div class="column">
+      <h4>BMW, Toyota and Porsche Specialists</h4>
+      <p>Our highly trained mechanics come from various backgrounds, with several members of our team having previously worked for BMW, Toyota and Porsche.</p>
+    </div>
+  </div>
+
+
+
+<script>
+let slideIndex = 0;
+showSlides();
+function showSlides() {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}
+  slides[slideIndex-1].style.display = "block";
+  setTimeout(showSlides, 5000); // Change image every 2 seconds
+}
+</script>
+</body>
+</html>
