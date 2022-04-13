@@ -38,9 +38,10 @@ body {margin: 0; font-family: Verdana, sans-serif;}
   padding-top: 0px;
 }
 
+/* Columns */
 .column1 {
   float: left;
-  width: 29.2%;
+  width: 28.7%;
   height: 400px;
   text-align: center;
   padding-inline: 20px;
@@ -57,18 +58,29 @@ body {margin: 0; font-family: Verdana, sans-serif;}
   margin: 10px;
 }
 
+.column3 {
+  text-align: center;
+  float: center;
+ }
+
 .AboutUsLogo{
   height: 190px;
 }
 
-.column3 {
- text-align: center;
+/* Link Anchor */
+.anchor{
+  display: block;
+  height: 80px;
+  margin-top: -80px;
+  visibility: hidden;
 }
 
+/* Media Screen */
 @media screen and (max-width: 800px) {
   .top_nav {position: relative; display: flex; flex-direction: column;}
   .column1, .column2, .column3 {display: flex; width: 90%; flex-direction: column;}
   .slideshow-container {display: none;}
   .logo {display: block; margin-left: auto; margin-right: auto;}
-  .picture {width: 100%; height: auto;}
+  .picture {display: none;}
+  .responsive {width: 100%;}
 }
