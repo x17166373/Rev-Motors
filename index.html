@@ -15,7 +15,7 @@
     <a href="#Home">Home</a>
 </div>
 
-<div class="slideshow-container">
+<div id="Home" class="slideshow-container">
   <div class="mySlides fade">
     <img src="image1.jpg" style="width:100%">
   </div>
@@ -47,7 +47,8 @@
 
   <div class="row">
     <div class="column2">
-      <h3 id="About Us">About Us</h3>
+      <span class="anchor" id="About Us"></span>
+      <h3>About Us</h3>
       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
     </div>
     <div class="column2">
@@ -55,26 +56,9 @@
     </div>
   </div>
 
-  <div class="row">
-    <div class="column3">
-      <h3 id="Our Cars">Our Cars</h3>
-    </div>
-  </div>
+  <div class="column3"><h3>Our Cars</h3></div>
+  <span class="anchor" id="Our Cars"></span>
 
-<script>
-let slideIndex = 0;
-showSlides();
-function showSlides() {
-  let i;
-  let slides = document.getElementsByClassName("mySlides");
-  for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";
-  }
-  slideIndex++;
-  if (slideIndex > slides.length) {slideIndex = 1}
-  slides[slideIndex-1].style.display = "block";
-  setTimeout(showSlides, 5000); // Change image every 2 seconds
-}
-</script>
+<script src="script.js"></script>
 </body>
 </html>
