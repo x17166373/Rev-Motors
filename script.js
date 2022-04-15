@@ -28,3 +28,9 @@ function getData(){
   var email = document.getElementById("email");
   window.alert(name.value+ ", thank you for your details. We will be in touch via " + email.value + " shortly.");
   }
+
+//Personalised Greeting
+  var days = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
+  var d = new Date();
+  let day = days[d.getDay()];
+  document.getElementById("day").innerHTML = day;
