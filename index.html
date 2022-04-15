@@ -28,6 +28,17 @@
   </div>
 
   <div class="row">
+    <div class="column2">
+      <span class="anchor" id="About Us"></span>
+      <h3>About Us</h3>
+      <p>Happy <span id="day"></span>! Thank you for taking the time to visit our site and consider us. Whether you're looking for a quality used car or some mechanical work carried out on your existing vehicle, you need look no further!</p>
+    </div>
+    <div class="column2">
+      <img src="logo1.png" class="AboutUsLogo">
+    </div>
+  </div>
+
+  <div class="row">
     <div class="column1">
       <h4>All Brands</h4>
       <p>We pride ourselves on our ability to service all makes and models. No matter the problem, we are certain one of our highly trained mechanics will be able to help.</p>
@@ -42,17 +53,6 @@
       <h4>BMW, Toyota and Porsche Specialists</h4>
       <p>Our highly trained mechanics come from various backgrounds, with several members of our team having previously worked for BMW, Toyota and Porsche.</p>
       <img class="picture" src="OIP.jpg" width="80%" height="250">
-    </div>
-  </div>
-
-  <div class="row">
-    <div class="column2">
-      <span class="anchor" id="About Us"></span>
-      <h3>About Us</h3>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-    </div>
-    <div class="column2">
-      <img src="logo1.png" class="AboutUsLogo">
     </div>
   </div>
 
@@ -123,17 +123,17 @@
     </div>
 
     <div class="container1">
-      <form id="myform" onsubmit = "getData();">
+      <form action="#" id="myform" onsubmit = "getData();">
           <label for="name">Full Name</label>
-          <input type="text" id="name" name="name" placeholder="Your name..">
+          <input type="text" id="name" name="name" placeholder="Your name.." required>
 
           <label for="number">Phone Number</label>
-          <input type="text" id="number" name="number" placeholder="Your phone number..">
+          <input type="text" id="number" name="number" placeholder="Your phone number.." required>
       
           <label for="email">Email</label>
-          <input type="text" id="email" name="email" placeholder="Your email..">
+          <input type="text" id="email" name="email" placeholder="Your email.." required>
           <label for="subject">Subject</label>
-          <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+          <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px" required></textarea>
       
           <input type="submit" value="Submit">
         </form>
