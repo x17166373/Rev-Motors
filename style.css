@@ -1,0 +1,157 @@
+body {overflow-x: hidden; margin: 0; padding :0; font-family: Verdana, sans-serif;}
+
+/* Navbar */
+.top_nav {
+  overflow: hidden;
+  background-color: white;
+  opacity: 55%;
+  position: fixed;
+  display: inline-block;
+  top: 0;
+  width: 100%;
+}
+
+.top_nav a {
+  display: inline-block;
+  color: black;
+  padding: 20px 20px;
+  text-decoration: none;
+  font-size: 18px;
+  margin-bottom: 0;
+  float: right;
+}
+
+.top_nav a:hover {
+  background-color: gainsboro;
+  color: black;
+}
+
+.logo {
+  margin: 5px 20px;
+  height: 50px;
+  width: 150px;
+}
+
+/* Slideshow container */
+.slideshow-container {
+  width: 100%;
+  margin: None;
+  padding-top: 0px;
+}
+
+/* Columns */
+.column1 {
+  width: 33%;
+  text-align: center;
+  margin: 0px;
+  float: left;
+}
+
+.column2 {
+  width: 50%;
+  text-align: center;
+  padding-top: 20px;
+  float: left;
+}
+
+.column3 {
+  width: 100%;
+  text-align: center;
+}
+
+.AboutUsLogo{
+  height: 190px;
+}
+
+/* Link Anchor */
+.anchor{
+  display: block;
+  height: 80px;
+  margin-top: -80px;
+  visibility: hidden;
+}
+
+/* Gallery */
+.column {
+  float: left;
+  width: 25%;
+  padding: 0px;
+}
+
+.column img {
+  opacity: 0.8; 
+  cursor: pointer; 
+}
+
+.column img:hover {
+  opacity: 1;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.container {
+  position: relative;
+  display: none;
+}
+
+#imgtext {
+  position: absolute;
+  bottom: 15px;
+  left: 15px;
+  color: white;
+  font-size: 20px;
+}
+
+.closebtn {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  color: white;
+  font-size: 35px;
+  cursor: pointer;
+}
+
+/* Contact Form */
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: red;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: lightcoral;
+}
+
+.container1 {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
+/* Media Screen */
+@media screen and (max-width: 800px) {
+  .top_nav {position: relative; display: flex; flex-direction: column;}
+  .column1, .column2, .column3 {display: flex; width: 100%; flex-direction: column;}
+  .slideshow-container {display: none;}
+  .logo {display: block; margin-left: auto; margin-right: auto;}
+  .picture {display: none;}
+  .gallery {grid-template-columns: repeat(1, 1fr);}
+}
